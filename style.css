@@ -40,9 +40,9 @@
 
 .tic-tac-toe{
     width: 80%;
-    max-width: 25rem;
+    max-width: 20rem;
     height: 80%;
-    max-height: 25rem;
+    max-height: 20rem;
     font-size: 2rem;
 
     border: 1px solid rgba(255, 255, 255, 0.25);
