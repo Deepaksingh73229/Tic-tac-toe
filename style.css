@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    color: rgba(121, 226, 23, 0.982);
+    /* background: linear-gradient(  rgba(112, 73, 27, 0.947), rgb(31, 77, 77)); */
+    background-image: url(bgrd1.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    place-items: center;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+
+}
+
+.info, .btn{
+    /* position: absolute; */
+    /* top: 3rem; */
+    /* left: 50%; */
+    color: rgb(232, 196, 52);
+    background-color: rgba(255, 255, 255, 0.15);
+    /* font-size: x-large; */
+    font-size: 30px;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+}
+
+.tic-tac-toe{
+    width: 80%;
+    max-width: 25rem;
+    height: 80%;
+    max-height: 25rem;
+    font-size: 2rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 2px 1px rgba(96, 87, 75, 0.725); */
+   
+    /* margin-top: 15px; */
+    /* margin-bottom: 15px; */
+    /* padding: 30px 30px; */
+    padding: 2rem;
+    /* background-color: blueviolet; */
+    backdrop-filter: blur(20px);
+    /* position: relative; */
+    display: grid;
+    /* place-items: center; */
+
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+
+}
+
+.box{
+    position: relative;
+    /* width: 100%; */
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid whitesmoke;
+}
+
+.box7, .box8{
+    border-right: 2px solid whitesmoke;
+}
+
+.btn{
+    cursor: pointer;
+    display: none;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(149, 182, 100, 0.245);
+}
