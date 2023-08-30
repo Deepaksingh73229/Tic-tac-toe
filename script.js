@@ -21,6 +21,7 @@ function init(){
 
     player = 'X';
 
+    count = 0;
     grid = ["","","","","","","","",""];
     info.innerText = `Current Player: ${player}`;
     btn.classList.remove('active');
